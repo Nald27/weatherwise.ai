@@ -25,14 +25,14 @@ export default function DailyForecast({ weather }) {
         {daily.map((day, index) => (
           <div
             key={day.time}
-            className="grid grid-cols-[70px_1fr_auto] items-center gap-4 py-5"
+            className="grid grid-cols-[120px_1fr_auto] items-center gap-4 py-5"
           >
-            <div className="flex items-center gap-3">
-              <span className="text-xl text-[#241b13]/70">
+            <div className="flex items-center gap-3 whitespace-nowrap">
+              <span className="flex w-6 justify-center text-xl text-[#241b13]/70">
                 {getWeatherSymbol(day.weatherCode)}
               </span>
 
-              <p className="text-xs font-bold uppercase tracking-[0.18em] text-[#241b13]/45">
+              <p className="text-xs font-bold uppercase tracking-[0.16em] text-[#241b13]/45">
                 Day {index + 1}
               </p>
             </div>
@@ -44,7 +44,7 @@ export default function DailyForecast({ weather }) {
               </p>
             </div>
 
-            <p className="text-sm text-[#241b13]/70">
+            <p className="text-right text-sm text-[#241b13]/70">
               {Math.round(day.maxTemp)}° / {Math.round(day.minTemp)}°
             </p>
           </div>
