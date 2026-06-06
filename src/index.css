@@ -1,0 +1,22 @@
+@import "tailwindcss";
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background: #e9dcc3;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  background: #e9dcc3;
+  color: #241b13;
+  font-family: Georgia, "Times New Roman", serif;
+}
+
+::selection {
+  background: #241b13;
+  color: #f4ead7;
+}
